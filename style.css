@@ -1,0 +1,214 @@
+:root {
+  --primary-bg: #F1EFE5;
+
+  --primary-border-clr: #F04F29;
+
+  --primary-font: "Poppins", serif;
+  --primary-text-clr: #000000;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+  overflow-wrap: break-word;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+.landing-pg-container {
+  height: 100vh;
+  width: 100%;
+  /* background-color: var(--primary-bg); */
+  background-color: #f1efe5;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23f04f29' fill-opacity='0.27' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+  font-family: var(--primary-font);
+}
+
+.menubar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.6rem 3.5rem;
+}
+.menubar .logo {
+  display: flex;
+  align-items: center;
+}
+.menubar .logo img {
+  max-width: 60px;
+  height: 60px;
+  margin-right: 0.5rem;
+  border-radius: 50%;
+  transition: transform 2s ease-in-out;
+  cursor: pointer;
+}
+.menubar .logo img:hover {
+  transform: rotate(360deg);
+}
+.menubar .logo h1 {
+  font-weight: 600;
+  font-style: italic;
+}
+.menubar .logo h1 span {
+  font-size: 2.5rem;
+}
+.menubar ul {
+  list-style: none;
+  display: flex;
+}
+.menubar ul li {
+  margin: 0 2rem;
+  transition: all 0.3s;
+}
+.menubar ul li:hover {
+  transform: scale(1.1);
+}
+.menubar ul li a {
+  text-decoration: none;
+  color: var(--primary-text-clr);
+  font-size: 1.1rem;
+  font-weight: 500;
+  font-style: italic;
+  transition: all 0.15s;
+}
+.menubar ul li a:hover {
+  color: var(--primary-border-clr);
+}
+
+.content {
+  display: flex;
+  width: 100%;
+  margin-top: 4rem;
+}
+.content .welcome-container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4rem;
+}
+.content .welcome-container h2 {
+  position: relative;
+  font-weight: 500;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  z-index: 999;
+}
+.content .welcome-container h2 div {
+  position: absolute;
+  width: 100%;
+  height: 0.8rem;
+  bottom: 10px;
+  filter: opacity(0.7);
+  z-index: -1;
+  background-color: var(--primary-border-clr);
+}
+.content .welcome-container p {
+  width: 25rem;
+  font-size: 1.2rem;
+  text-align: center;
+  line-height: 1.7;
+}
+
+.content .login-box {
+  width: 30rem;
+  background-color: var(--primary-border-clr);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0;
+  border-radius: 1rem;
+}
+.content .login-box h3 {
+  color: var(--primary-bg);
+  font-weight: 500;
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+
+.input-container {
+  margin: 1rem 0;
+}
+.input-container div {
+  position: relative;
+}
+.input-container div i {
+  position: absolute;
+  padding-top: 1.4rem;
+  padding-left: 1rem;
+}
+.input-container div input {
+  padding-left: 1.5rem;
+  padding: 0.5rem 2.5rem;
+  outline: none;
+  border: 2px solid var(--primary-text-clr);
+  margin: 0.5rem 0;
+  border-radius: 1.5rem;
+}
+.login-btn {
+  font-size: 1.2rem;
+  padding: 0.3rem 1.5rem;
+  border-radius: 1.5rem;
+  border: 2px solid var(--primary-text-clr);
+  margin-bottom: 1rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.login-btn:hover {
+  transform: scale(1.1);
+}
+.login-box p a {
+  color: var(--primary-bg);
+}
+.login-box .forgot-pass {
+  margin: 1rem 0;
+}
+.other {
+  display: flex;
+}
+.other p {
+  margin: 0 1.5rem;
+  margin-bottom: 2rem;
+}
