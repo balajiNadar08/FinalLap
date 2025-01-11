@@ -3,12 +3,75 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css"><link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
   <title>Important Events</title>
 </head>
 <body>
 
   <div class="imp-events-container">
-    <h1># IMPORTANT EVENTS</h1>
+    <div class="head">
+      <h1># IMPORTANT EVENTS</h1>
+      <button class="add-btn">
+        <i class="fa-solid fa-circle-plus"></i>
+         ADD EVENT
+      </button>
+    </div>
+
+    <div class="add-events">
+      <div class="date-time">
+        <div class="date">
+          <label for="date">Date: </label>
+          <input id="date" type="date"  required>
+        </div>
+
+        <div class="time">
+          <label for="time">Time: </label>
+          <input id="time" type="time" required>
+        </div>
+      </div>
+
+      <div class="event">
+        <label for="event">Event: </label>
+        <input id="event" type="text" required>
+      </div>
+
+      <div class="note">
+        <label for="note">Note: </label>
+        <input id="note" type="text" required>
+      </div>
+
+      <div class="btns">
+        <button class="cancel-btn">Cancel</button>
+        <button class="add-btn">Add</button>
+      </div>
+    </div>
+
+    <div class="events">
+      <div class="all-dates">
+        <p>12 Jan 25</p>
+        <p>15 Jan 25</p>
+      </div>
+      <div class="all-time">
+        <p>09:30 AM</p>
+        <p>11:00 PM</p>
+      </div>
+      <div class="all-events">
+        <p>Marathon</p>
+        <p>Haircut</p>
+      </div>
+      <div class="all-notes">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime labore vel error animi, itaque porro?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, a saepe quos eius fugit quis eaque sed rerum dignissimos nostrum.</p>
+      </div>
+    </div>
   </div>
   
 </body>
