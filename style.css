@@ -321,3 +321,44 @@ body {
 .imp-events-container .add-events .btns input {
   background-color: var(--blue-clr);
 }
+
+
+.imp-events-container .events {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  color: var(--primary-bg);
+  text-align: center;
+  padding: 0 3rem 0 1rem;
+}
+.imp-events-container .head-row {
+  display: grid;
+  grid-template-columns: 1.5fr 1.5fr 3.5fr 3.5fr;
+  font-weight: bold;
+  border-bottom: 0.1rem solid var(--primary-bg);
+}
+.imp-events-container .event-row {
+  display: grid;
+  grid-template-columns: 1.5fr 1.5fr 3.5fr 3.5fr;
+  align-items: center;
+}
+.imp-events-container .event-row>.event-col,
+.imp-events-container .head-row>.event-col {
+  padding: 1rem 0;
+}
+.imp-events-container .event-row .event-col p,
+.imp-events-container .head-row .event-col p {
+  margin: 0;
+  font-size: 1.1rem;
+  word-wrap: break-word;
+}
+.imp-events-container .event-row .notes-col p {
+  overflow-wrap: break-word;
+}
+.event-row {
+  padding: 0.5rem 0;
+  border-bottom: 0.1rem solid var(--primary-bg);
+}
+.event-row:last-child {
+  border: none;
+}
